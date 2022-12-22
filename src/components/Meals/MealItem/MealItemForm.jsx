@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "../../../styles/MealItemForm.module.css";
 import Input from "../../UI/Input";
+
 const MealItemForm = (props) => {
   return (
     <form action="" className={classes.form}>
@@ -8,7 +9,7 @@ const MealItemForm = (props) => {
         label={"Amount"}
         type={"number"}
         input={{
-          id: "amount_" + props.id,
+          id: "amount_" + props.item.id,
           type: "number",
           min: "1",
           max: "5",
